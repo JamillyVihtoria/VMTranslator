@@ -90,6 +90,12 @@ python main.py 07/BasicTest/BasicTest.vm
 ```bash
 python main.py 07/SimpleAdd/SimpleAdd.vm
 ```
+### Exemplo 3
+
+```bash
+python main.py 07/MemoryAccess/BasicTest/BasicTest.vm
+
+```
 
 O programa gera automaticamente um arquivo `.asm` no mesmo diretório do arquivo de entrada.
 
