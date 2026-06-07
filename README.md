@@ -27,17 +27,26 @@ VMTRANSLATOR/
 │   │   ├── BasicTest.tst
 │   │   └── BasicTest.cmp
 │   │
-│   └── SimpleAdd/
-│       ├── SimpleAdd.vm
-│       ├── SimpleAdd.asm
-│       ├── SimpleAdd.tst
-│       └── SimpleAdd.cmp
+│   ├── SimpleAdd/
+│   │   ├── SimpleAdd.vm
+│   │   ├── SimpleAdd.asm
+│   │   ├── SimpleAdd.tst
+│   │   └── SimpleAdd.cmp
+│   │
+│   ├── MemoryAccess/
+│   │   └── BasicTest/
+│   │       ├── BasicTest.vm
+│   │       ├── BasicTest.asm
+│   │       ├── BasicTest.tst
+│   │       └── BasicTest.cmp
 │
 ├── codewriter.py
 ├── parser.py
 ├── main.py
-├── requirements.txt
-└── README.md
+├── test_vmtranslator.py
+├── README.md
+└── **pycache**/
+
 ```
 
 ---
