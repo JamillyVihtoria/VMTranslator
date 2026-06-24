@@ -5,6 +5,12 @@ class CommandType(Enum):
     C_ARITHMETIC = 1
     C_PUSH = 2
     C_POP = 3
+    C_LABEL = 4
+    C_GOTO = 5
+    C_IF = 6
+    C_FUNCTION = 7
+    C_CALL = 8
+    C_RETURN = 9
 
 
 class Parser:
@@ -33,9 +39,20 @@ class Parser:
 
         if cmd == "push":
             return CommandType.C_PUSH
-
         if cmd == "pop":
             return CommandType.C_POP
+        if cmd == "label":
+            return CommandType.C_LABEL
+        if cmd == "goto":
+            return CommandType.C_GOTO
+        if cmd == "if-goto":
+            return CommandType.C_IF
+        if cmd == "function":
+            return CommandType.C_FUNCTION
+        if cmd == "call":
+            return CommandType.C_CALL
+        if cmd == "return":
+            return CommandType.C_RETURN
 
         return CommandType.C_ARITHMETIC
 
